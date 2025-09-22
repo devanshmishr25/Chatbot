@@ -1,0 +1,156 @@
+/* Dark mode overrides */
+.chat-wrapper.dark {
+  background: #1e1e1e; /* Dark background for wrapper */
+}
+
+.chat-wrapper.dark .chat-container {
+  background: #2c2c2c; /* Dark container */
+}
+
+.chat-wrapper.dark .messages {
+  /* Scrollable messages area background */
+  background: #2c2c2c;
+}
+
+.chat-wrapper.dark .ai-msg {
+  background: #3a3a3a;
+  color: #f1f1f1;
+}
+
+.chat-wrapper.dark .user-msg {
+  background: #0056b3;
+  color: #fff;
+}
+
+.chat-wrapper.dark .input-container {
+  background: #1f1f1f;
+  border-top: 1px solid #555;
+}
+
+.chat-wrapper.dark .input-container input {
+  background: #2c2c2c;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.chat-wrapper.dark .input-container button {
+  background: #25d366; /* keep same green */
+  color: #fff;
+}
+
+/* Wrapper fills full viewport */
+.chat-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: #e5ddd5; /* WhatsApp-style background */
+  font-family: Arial, sans-serif;
+}
+
+/* Chat container fills screen, header + messages + input */
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Fill remaining height */
+  width: 100%;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Messages scrollable area */
+.messages {
+  flex: 1; /* Takes all space above input */
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+
+/* AI and User messages */
+.ai-msg {
+  background: #f1f0f0;
+  padding: 10px 14px;
+  border-radius: 18px 18px 18px 0;
+  margin: 5px 0;
+  align-self: flex-start;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+.user-msg {
+  background: #007bff;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 18px 18px 0 18px;
+  margin: 5px 0;
+  align-self: flex-end;
+  max-width: 80%;
+  word-break: break-word;
+}
+
+/* Input always at bottom */
+.input-container {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #f9f9f9;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-container button {
+  margin-left: 10px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #25d366;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.input-container button:hover:not(:disabled) {
+  background: #20b858;
+}
+
+.input-container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .messages {
+    padding: 8px;
+  }
+
+  .input-container input,
+  .input-container button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .messages {
+    padding: 6px;
+  }
+
+  .input-container input,
+  .input-container button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
