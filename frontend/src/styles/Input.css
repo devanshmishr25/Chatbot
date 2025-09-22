@@ -18,18 +18,16 @@
   padding: 12px 20px;
   border-radius: 20px;
   border: none;
-  background: #25d366;
+  background:#007bff;
+  
   color: white;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.2s;
 }
 
-.input-container button:hover:not(:disabled) {
-  background: #20b858;
-}
-
 .input-container button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
+

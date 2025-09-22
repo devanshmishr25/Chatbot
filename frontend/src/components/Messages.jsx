@@ -28,7 +28,7 @@ const Messages = ({ messages, loading }) => {
                 h2: ({ children }) => <h4>{children}</h4>,
                 h3: ({ children }) => <h5>{children}</h5>,
                 ul: ({ children }) => <ul className="list">{children}</ul>,
-                li: ({ children }) => <li className="list-item">• {children}</li>,
+                li: ({ children }) => <li className="list-item"> {children}</li>,
               }}
             />
           ) : (

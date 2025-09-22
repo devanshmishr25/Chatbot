@@ -4,7 +4,7 @@ import "../styles/Header.css";
 const Header = ({ darkMode, toggleDarkMode }) => {
   return (
     <div className="chat-header">
-      <h2>MERN Chatbot</h2>
+      <h2>CHATBOT</h2>
       <button onClick={toggleDarkMode}>
         {darkMode ? "Light" : "Dark"}
       </button>

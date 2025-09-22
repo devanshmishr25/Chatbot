@@ -91,45 +91,6 @@
   word-break: break-word;
 }
 
-/* Input always at bottom */
-.input-container {
-  display: flex;
-  padding: 10px;
-  border-top: 1px solid #ddd;
-  background: #f9f9f9;
-  position: sticky;
-  bottom: 0;
-  z-index: 10;
-}
-
-.input-container input {
-  flex: 1;
-  padding: 12px;
-  border-radius: 20px;
-  border: 1px solid #ccc;
-  outline: none;
-}
-
-.input-container button {
-  margin-left: 10px;
-  padding: 12px 20px;
-  border-radius: 20px;
-  border: none;
-  background: #25d366;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-.input-container button:hover:not(:disabled) {
-  background: #20b858;
-}
-
-.input-container button:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {

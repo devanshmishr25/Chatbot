@@ -7,7 +7,7 @@ const Input = ({ input, setInput, sendMessage, loading }) => {
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Type a message..."
+        placeholder="Ask anything..."
         onKeyDown={(e) => e.key === "Enter" && sendMessage()}
       />
       <button onClick={sendMessage} disabled={loading}>
