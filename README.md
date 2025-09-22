@@ -1,4 +1,4 @@
-# Live site here [(https://chatbotfrontend-vv30.onrender.com)]
+# Live site here (https://chatbotfrontend-vv30.onrender.com)
 
 # 🤖 MERN Chatbot (Powered by DeepSeek API)
 
